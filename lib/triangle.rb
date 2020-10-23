@@ -19,7 +19,14 @@ class Triangle
     
   end
   
-  def kind()
+  def kind
+   if @s1 == @s2 && @s1 == @s3
+      return :equilateral
+    elsif @s1 == @s2 || @s2 == @s3 || @s3 == @s1
+      return :isosceles
+    else
+      return :scalene
+    end
 
   
 class TriangleError < StandardError
