@@ -27,10 +27,9 @@ class Triangle
     else
       return :scalene
     end
-  end 
-end
+  end
   
-class TriangleError < StandardError
-#triangle error code
+  class TriangleError < StandardError
+  puts 
     
 end
